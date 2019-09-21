@@ -1,8 +1,8 @@
 # EgelIsoft2019
 
-´
+´´´
 
-        button.setOnClickListener {
+      button.setOnClickListener {
          var valorJson=  application.assets.open("temas.json").bufferedReader().use {
                it.readLine()
            }
@@ -15,7 +15,7 @@
 
             Toast.makeText(this, "Pero es Pregunta ${pregunta?.area} ", Toast.LENGTH_LONG).show()
 
-var media= MediaPlayer()
+            var media= MediaPlayer()
             var descriptor=application.assets.openFd("sad.mp3")
             media.setDataSource(descriptor.fileDescriptor,descriptor.startOffset,descriptor.length)
             media.prepare()
@@ -23,5 +23,6 @@ var media= MediaPlayer()
 
 
         }
+    }
         
-´
+´´´
