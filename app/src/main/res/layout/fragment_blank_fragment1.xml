@@ -18,9 +18,10 @@
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="32dp"
-            android:background="@color/colorAccent"
+            android:background="@drawable/forma_redonda"
             android:fontFamily="@font/alegreya_sans_sc_thin"
             android:text="Empezar"
+
             android:textColor="@android:color/background_light"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
