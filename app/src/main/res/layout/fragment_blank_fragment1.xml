@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:background="@mipmap/cafesito">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/ingresar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
