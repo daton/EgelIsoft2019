@@ -28,6 +28,8 @@ class BlankFragment1 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         ingresar.setOnClickListener { view ->
+
+
             view.findNavController().navigate(R.id.uno_dos)
 
         }

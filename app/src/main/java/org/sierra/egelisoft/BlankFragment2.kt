@@ -9,9 +9,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.Toast
 import kotlinx.android.synthetic.main.fragment_blank_fragment2.*
+import android.widget.TextView
+
+
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,15 +31,20 @@ private const val ARG_PARAM2 = "param2"
 class BlankFragment2 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val temas=ArrayList<String>()
+        temas.add("A1. Diagnóstico del problema")
+        temas.add("A2. Modelado de los requerimientos")
         var spinner=   spinner
 
         // Create an ArrayAdapter using the string array and a default spinner layout
-        val adapter = ArrayAdapter.createFromResource(activity?.applicationContext!!,
-            R.array.planets_array, android.R.layout.simple_spinner_item)
+     //  val adapter = ArrayAdapter.createFromResource(activity?.applicationContext!!,
+      //      R.array.arreglo_temas,  android.R.layout.simple_spinner_item)
 // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+         var adapter=ArrayAdapter<String>(activity?.applicationContext!!, android.R.layout.simple_spinner_item, temas)
+       adapter.setDropDownViewResource(R.layout.simple_spiner)
 // Apply the adapter to the spinner
         spinner.adapter = adapter
+
         spinner?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onNothingSelected(parent: AdapterView<*>?) {
 
