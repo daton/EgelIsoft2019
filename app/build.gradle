@@ -25,6 +25,9 @@ android {
     //Aqui agregamos las opciones de empaquetamiento, es decir quitamos los
     //duplicados de la fundacion apache para uso de protocolo http
     packagingOptions {
+        pickFirst 'META-INF/kotlinx-io.kotlin_module'
+        pickFirst 'META-INF/atomicfu.kotlin_module'
+        pickFirst 'META-INF/kotlinx-coroutines-io.kotlin_module'
         exclude 'META-INF/ASL2.0'
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/license.txt'
