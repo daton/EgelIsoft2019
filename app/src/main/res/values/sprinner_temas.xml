@@ -3,13 +3,7 @@
 <resources>
     <string-array name="arreglo_temas">
         <item>A1. Diagnóstico del problema y valoración de la factibilidad para el desarrollo de sistemas de información</item>
-        <item>Modelado de los requerimientos de un sistema de
-información</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item> A2. Modelado de los requerimientos de un sistema deinformación</item>
+
     </string-array>
 </resources>
