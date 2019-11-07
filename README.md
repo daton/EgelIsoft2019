@@ -1,3 +1,12 @@
+# unitecmx-v3
+
+NuevomPush producción para github pages y Angular 8
+```
+ npx ngh --no-silent --repo=https://github.com/daton/unitecmx.git
+```
+
+
+
 # EgelIsoft2019
 
 
